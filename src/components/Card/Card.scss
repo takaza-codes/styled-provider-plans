@@ -1,0 +1,119 @@
+$height: 15em;
+$blue: rgb(101, 204, 222);
+$green: rgb(71, 186, 129);
+$red: rgb(208, 52, 52);
+$darkgrey: rgb(83, 83, 83);
+
+.card {
+  height: $height;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 2px solid white;
+  box-sizing: border-box;
+
+  h2,
+  .priceWrapper,
+  .speedInfo,
+  .trafficInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    border-bottom: 2px solid white;
+  }
+
+  .priceWrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    .priceDisplay {
+      display: flex;
+      height: 2.5em;
+
+      .top,
+      .bottom {
+        font-size: 0.8em;
+      }
+
+      .top {
+        padding-right: 0.2em;
+        align-self: start;
+      }
+
+      .price {
+        align-self: center;
+        font-size: 2em;
+      }
+
+      .bottom {
+        align-self: end;
+      }
+    }
+  }
+
+  h2,
+  .priceWrapper {
+    color: white;
+  }
+
+  .speedInfo {
+    background-color: rgb(247, 247, 247);
+  }
+
+  .trafficInfo {
+    text-align: center;
+    background-color: rgb(238, 237, 237);
+  }
+
+  .speedInfo,
+  .trafficInfo {
+    margin: 0;
+    padding: 0.8em;
+    font-size: 0.7em;
+  }
+
+  &:first-child {
+    h2 {
+      background-color: darken($blue, 15%);
+    }
+
+    div {
+      background-color: $blue;
+    }
+  }
+
+  &:nth-child(2) {
+    h2 {
+      background-color: darken($green, 15%);
+    }
+
+    div {
+      background-color: $green;
+    }
+  }
+
+  &:nth-child(3) {
+    height: $height + 0.8em;
+    h2 {
+      background-color: darken($red, 15%);
+    }
+    div {
+      background-color: $red;
+    }
+  }
+
+  &:last-child {
+    h2 {
+      background-color: darken($darkgrey, 15%);
+    }
+    div {
+      background-color: $darkgrey;
+    }
+  }
+}
