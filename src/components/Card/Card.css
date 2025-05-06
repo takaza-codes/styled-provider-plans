@@ -18,6 +18,7 @@
   padding: 0.5em 0;
   font-size: 1.2em;
   border-bottom: 2px solid white;
+  text-align: center;
 }
 .card .priceWrapper {
   flex-grow: 1;
