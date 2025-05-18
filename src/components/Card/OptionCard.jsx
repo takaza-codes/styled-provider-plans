@@ -3,8 +3,19 @@ import "../Card/OptionCard.css"
 
 function OptionCard({props}) {
    const {title, price, speed, traffic, highlight} = props;
+
+   const showMessage = () => {
+    alert("Выбран тариф " + props.title + "!");
+  };
+ 
+  const handleClick = () => {
+    showMessage();
+  };
+
    return (
-      <div className={["card", highlight && "highlighted"].filter(Boolean).join(' ')}>
+
+      <div className={["card", highlight && "highlighted"].filter(Boolean).join(' ')}
+      onClick={handleClick}>
         <h2>{title}</h2>
         <div className="priceWrapper">
          <div className="priceDisplay">

@@ -4,6 +4,7 @@
   flex-flow: column nowrap;
   border: 2px solid white;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .card h2,
 .card .priceWrapper,
