@@ -1,12 +1,12 @@
 import "./App.css";
 import { plans } from "../src/constants/plans-info";
-import Card from "./components/Card/Card";
+import OptionCard from "./components/Card/OptionCard";
 
 function App() {
   return (
     <div className="mainContainer">
       {plans.map((plan) => {
-        return <Card props={plan} />;
+        return <OptionCard key={plan.id} props={plan} />;
       })}
     </div>
   );

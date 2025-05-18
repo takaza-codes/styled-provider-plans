@@ -100,7 +100,6 @@ $darkgrey: rgb(83, 83, 83);
   }
 
   &:nth-child(3) {
-    height: $height + 0.8em;
     h2 {
       background-color: darken($red, 15%);
     }
@@ -117,4 +116,8 @@ $darkgrey: rgb(83, 83, 83);
       background-color: $darkgrey;
     }
   }
+}
+
+.highlighted {
+  height: $height + 0.8em;
 }

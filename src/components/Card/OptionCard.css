@@ -73,9 +73,6 @@
 .card:nth-child(2) div {
   background-color: rgb(71, 186, 129);
 }
-.card:nth-child(3) {
-  height: 15.8em;
-}
 .card:nth-child(3) h2 {
   background-color: #952222;
 }
@@ -87,4 +84,8 @@
 }
 .card:last-child div {
   background-color: rgb(83, 83, 83);
-}/*# sourceMappingURL=Card.css.map */
+}
+
+.highlighted {
+  height: 15.8em;
+}

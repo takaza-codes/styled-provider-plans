@@ -1,10 +1,10 @@
 import React from "react";
-import "../Card/Card.css"
+import "../Card/OptionCard.css"
 
-function Card({props}) {
-   const {title, price, speed, traffic} = props;
+function OptionCard({props}) {
+   const {title, price, speed, traffic, highlight} = props;
    return (
-     <div className="card">
+      <div className={["card", highlight && "highlighted"].filter(Boolean).join(' ')}>
         <h2>{title}</h2>
         <div className="priceWrapper">
          <div className="priceDisplay">
@@ -19,4 +19,4 @@ function Card({props}) {
    );
 }
 
-export default Card;
+export default OptionCard;
