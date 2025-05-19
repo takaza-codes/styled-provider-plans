@@ -1,6 +1,6 @@
 import "./App.css";
 import { plans } from "../src/constants/plans-info";
-import OptionCard from "./components/Card/OptionCard";
+import OptionCard from "./components/OptionCard/OptionCard";
 
 function App() {
   return (

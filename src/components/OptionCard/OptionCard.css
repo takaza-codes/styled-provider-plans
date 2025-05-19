@@ -6,6 +6,9 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+.card:hover {
+  border: 2px solid rgb(104, 104, 213);
+}
 .card h2,
 .card .priceWrapper,
 .card .speedInfo,

@@ -12,6 +12,10 @@ $darkgrey: rgb(83, 83, 83);
   box-sizing: border-box;
   cursor: pointer;
 
+  &:hover {
+    border: 2px solid rgb(104, 104, 213);
+  }
+
   h2,
   .priceWrapper,
   .speedInfo,
