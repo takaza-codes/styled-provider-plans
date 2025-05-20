@@ -1,19 +1,22 @@
 import React from "react";
 import "./OptionCard.scss";
 
-function OptionCard({ props }) {
+function OptionCard({ props, selected, onSelect }) {
   const { title, price, speed, traffic } = props;
 
   const showMessage = () => {
-    alert("Выбран тариф " + props.title + "!");
+    alert("Выбран тариф " + title + "!");
   };
 
   const handleClick = () => {
     showMessage();
+    onSelect();
   };
 
   return (
-    <div className="card" onClick={handleClick}>
+    <div
+      className={selected ? "card highlighted" : "card"}
+      onClick={handleClick}>
       <h2>{title}</h2>
       <div className="priceWrapper">
         <div className="priceDisplay">

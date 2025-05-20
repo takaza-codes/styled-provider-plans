@@ -1,15 +1,8 @@
 import "./App.scss";
-import { plans } from "../src/constants/plans-info";
-import OptionCard from "./components/OptionCard/OptionCard";
+import OptionList from "./components/OptionList/OptionList";
 
 function App() {
-  return (
-    <div className="mainContainer">
-      {plans.map((plan) => {
-        return <OptionCard key={plan.id} props={plan} />;
-      })}
-    </div>
-  );
+  return <OptionList />;
 }
 
 export default App;
