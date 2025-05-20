@@ -2,7 +2,7 @@ import React from "react";
 import "./OptionCard.scss";
 
 function OptionCard({ props }) {
-  const { title, price, speed, traffic, highlight } = props;
+  const { title, price, speed, traffic } = props;
 
   const showMessage = () => {
     alert("Выбран тариф " + props.title + "!");
@@ -13,9 +13,7 @@ function OptionCard({ props }) {
   };
 
   return (
-    <div
-      className={["card", highlight && "highlighted"].filter(Boolean).join(" ")}
-      onClick={handleClick}>
+    <div className="card" onClick={handleClick}>
       <h2>{title}</h2>
       <div className="priceWrapper">
         <div className="priceDisplay">

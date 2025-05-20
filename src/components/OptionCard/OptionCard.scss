@@ -14,6 +14,7 @@ $darkgrey: rgb(83, 83, 83);
 
   &:hover {
     border: 2px solid rgb(104, 104, 213);
+    height: $height + 0.8em;
   }
 
   h2,
@@ -121,8 +122,4 @@ $darkgrey: rgb(83, 83, 83);
       background-color: $darkgrey;
     }
   }
-}
-
-.highlighted {
-  height: $height + 0.8em;
 }

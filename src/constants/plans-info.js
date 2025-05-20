@@ -5,7 +5,6 @@ export const plans = [
     price: 350,
     speed: 10,
     traffic: "Объем включенного трафика не ограничен",
-    highlight: false,
   },
   {
     id: 2,
@@ -13,7 +12,6 @@ export const plans = [
     price: 450,
     speed: 50,
     traffic: "Объем включенного трафика не ограничен",
-    highlight: false,
   },
   {
     id: 3,
@@ -21,7 +19,6 @@ export const plans = [
     price: 550,
     speed: 100,
     traffic: "Объем включенного трафика не ограничен",
-    highlight: true,
   },
   {
     id: 4,
@@ -29,6 +26,5 @@ export const plans = [
     price: 1000,
     speed: 200,
     traffic: "Объем включенного трафика не ограничен",
-    highlight: false,
   },
 ];
