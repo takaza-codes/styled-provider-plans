@@ -1,5 +1,5 @@
 import React from "react";
-import "./OptionCard.css";
+import "./OptionCard.scss";
 
 function OptionCard({ props }) {
   const { title, price, speed, traffic, highlight } = props;
