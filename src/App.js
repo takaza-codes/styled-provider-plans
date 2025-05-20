@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { plans } from "../src/constants/plans-info";
 import OptionCard from "./components/OptionCard/OptionCard";
 
